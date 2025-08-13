@@ -1,4 +1,5 @@
 import { Component,Input, OnInit } from '@angular/core';
+import { Pensamento } from './pensamento';
 
 @Component({
   selector: 'app-pensamento',
@@ -7,10 +8,11 @@ import { Component,Input, OnInit } from '@angular/core';
 })
 export class PensamentoComponent implements OnInit {
 
-  @Input() pensamento = {
-    conteudo: `teshbknkbknnsadkcxvkjsd fvkjsdfkj nvkjds vj fj fj vn fvn fn vf nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnte`,
-    autoria: `teste`,
-    modelo: `modelo1`
+  @Input() pensamento: Pensamento = {
+    id: 0,
+    conteudo: ``,
+    autoria: ``,
+    modelo: ``
   }
 
   constructor() { }
