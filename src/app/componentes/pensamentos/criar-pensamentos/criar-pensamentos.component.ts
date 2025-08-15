@@ -32,7 +32,8 @@ formulario!: FormGroup;
         Validators.required,
         Validators.minLength(3) //define um tamanho minimo
     ])],
-      modelo: ['modelo1']
+      modelo: ['modelo1'],
+      favorito: [false]
     })
   }
 
